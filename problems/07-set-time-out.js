@@ -20,6 +20,15 @@ funcTimer(5000, partyFunc); // in 5 seconds prints: "Party time!"
 
 // your code here!
 
+/**
+ * 1. function takes time and a function
+ * 2. use global.setTimeout to invoke the passed in function
+ */
+
+const funcTimer = (time, func) => {
+  globalThis.setTimeout(func, time);
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

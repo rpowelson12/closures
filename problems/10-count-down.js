@@ -29,6 +29,23 @@ Example 4:
 ***********************************************************************/
 
 // your code here
+/**
+ * 
+ */
+
+const countDownTimer = n => {
+  if (n > 0) {
+    return function() {
+      while (n > 0) {
+        n--;
+        return "Happy New Year!"
+      }
+    };
+  }
+  else {
+    return "Happy New Year!";
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -18,6 +18,22 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 // your code here!
+/**
+ * 1. function sandwichMaker
+ * 2. returns a function that accepts a string to add to the sandwich. 
+ * 3. sandwich starts off with a tomato 
+ * 4. separates ingredients with "and"
+ */
+
+const sandwichMaker = () => {
+  let sandwichString = "One sandwich with tomato";
+
+
+  return function addItem(string) {
+    sandwichString = sandwichString+ " and " + string
+    return sandwichString;
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
