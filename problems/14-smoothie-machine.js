@@ -23,6 +23,13 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // your code here
+  /**
+   * 1. smootieMachine accepts and number of params and a function
+   * 2. the return function also accepts any number of params
+   * 3. the return function will
+   */
+  
+  
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

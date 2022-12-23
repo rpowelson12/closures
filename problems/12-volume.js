@@ -25,7 +25,28 @@ console.log(table2(75)); // STILL prints 6
 ***********************************************************************/
 
 // your code here
+/**
+ * 1. function passed int and returns a function
+ * 2. return function takes 2 more numbers one at a time
+ * 3. return product of all three numbers
+ */
 
+// const recVolume = height => {
+//   let nums = [];
+//   let a = nums[0];
+//   let b = nums[1];
+//   let c = nums[2];
+//   nums.push(height)
+
+//   return function(num) {
+//     nums.push(num);
+
+//       return function(num){
+//         nums.push(num)
+//         return a * b * c;
+//     }
+//   }
+// }
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
