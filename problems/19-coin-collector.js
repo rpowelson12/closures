@@ -1,6 +1,6 @@
 /***********************************************************************
 Write a function named: coinCollector(numCoins). The coinCollector function will
-accept a number of coins (greater that 0) to collect when it is first invoked
+accept a number of coins (greater than 0) to collect when it is first invoked
 and will return a function. The function returned by coinCollector can then be
 invoked numCoins number of times passing in one coin (represented by an int) to
 be added to the collection.
@@ -26,6 +26,15 @@ Example 3:
 ***********************************************************************/
 
 // your code here
+const coinCollector = numCoins => {
+let collection = [];
+  return function(coin){
+    
+    collection.push(coin);
+    
+    return collection;
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

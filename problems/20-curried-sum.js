@@ -44,6 +44,33 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // your code here
 
+/**
+ * - Define an empty array, `numbers`.
+    - Define a function, `_curriedSum` that:
+        - Closes over `numArgs` and `numbers`.
+        - Takes a single number as an argument.
+        - Appends this to the `numbers` array each time.
+        - If `numbers.length === numArgs`, it sums the numbers in the array and
+        returns the result.
+        - Else, it returns itself.
+    - Returns `_curriedSum`.
+ */
+const curriedSum = numArgs => {
+  let numbers = [];
+  total = 0;
+
+  return function(num) {
+    numbers.push(num);
+    if (numbers.length === numArgs) {
+      for (i = 0; i < numbers.length; i++) {
+        let number = numbers[i];
+        total += number;
+      }
+    }
+    return total;
+  }
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
